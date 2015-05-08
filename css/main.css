@@ -1,4 +1,4 @@
-/*  ==========================================================================
+ /*  ==========================================================================
     Global Styles (things we use no matter what size)
     ========================================================================== */
 	@viewport {
@@ -14,7 +14,8 @@
 	    height: 100%;
 	    background-color: #fff;
 	    overflow:auto;
-	    color:#666;
+	    color:#333;
+	    padding:80px 0;
 	}
 	.chromeframe {
 	    margin: 0.2em 0;
@@ -22,12 +23,24 @@
 	    color: #000;
 	    padding: 0.2em 0;
 	}
+	.clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
 	img {
 	    vertical-align: middle;
+	}
+	.make-bold{
+		font-weight: 700;
 	}
 	.shadow{
 		text-shadow: 0px 2px 5px rgba(0, 0, 0, .8);
 	}
+
 	/* loading page */
 	#loading-page{
 		position:absolute;
@@ -63,7 +76,6 @@
 		display:block!important;
 		margin-top:0;
 	}
-
 	/* user alert styles */
 
 	#user-alert{
@@ -138,100 +150,84 @@
 	    display:none;
 	}
 
-	/* body styles */
-	
+	/* story styles */
+
+	.chapter #story{
+		margin-top:30px;
+	}
+	.chapter #story p.town{
+		font-weight:bold;
+		text-transform: uppercase;
+		color:#c52026;
+		margin:0;
+	}
+	.chapter #story span.posted{
+		font-family: "open-sans", arial, helvetica, sans-serif;
+		font-size:.7em;
+		color:#b3b3b3;
+		letter-spacing: 1px;
+	}
+	.chapter #story h2{
+		font-size: 4em;
+		line-height: 1em;
+		margin:20px 0;
+	}
+	.chapter #story .sharing{
+		margin-bottom:20px;
+	}
+	.chapter #story .sharing ul{
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+	.chapter #story .sharing ul li{
+		margin:0;
+		padding:0;
+		float:left;
+		padding-right:10px;
+		color:#b3b3b3;
+	}
 	.chapter #story p {
 	    font-size: 1.15em;
 	    line-height: 1.45em;
 	}
-	.chapter #story p.top-graph{
+	.chapter #story p.first{
 	    margin-top:0;
 	}
-	.chapter #story p strong,
-	.chapter #story p strong a,
-	.chapter #story p b,
-	.chapter #story p b a{
-	    color:#c52026;
-	    text-transform:uppercase;
+	.chapter #story p.last{
+	    margin-bottom:0;
 	}
 	.chapter #story p a{
-		color:#666;
+		color:#333;
 	}
 	.chapter #story p a:hover{
 		text-decoration: none;
 	}
+    .chapter #story span.read a{
+		text-transform: uppercase;
+		color:#c52026;
+	}	
+	.chapter  #story p.end-credit{
+		font-family: "open-sans", arial, helvetica, sans-serif;
+	    font-size: .9em;
+	    margin:0;
+	    text-align:right;
+	}
 
 	/* image and cutline styles */
 
-	.chapter .photo-package{
-	    margin:5% 0;
-	    padding:3% 0;
-	}
-	.chapter .photo-package img{
-	    border:1px solid #dddddd;
-	    border-radius:5px;
-	}
-	.chapter .photo-package.sidebar img{
-	    border:none;
-	    border-radius:0;
-	    margin:15px 0 3px 0;
-	}   
-	.chapter .photo-package h3{
-		font-size:1.25em;
-		font-weight: 700;
-	    margin-bottom:0;
-	    margin-top:0;
-	}
-	.chapter .photo-package h3:before{
-	    display: block;
-	    height: 10px;
-	    margin-bottom: 15px;
-	    width: 100px;
-	    background-color: #c52026;
-	    left: 0;
-	    top: 0;
-	    content:"";
-	}  
-	.chapter .photo-package.group.bottom h3:before{
-	    display: none;
-	} 
-	.chapter .photo-package .single-cutline{
+	.chapter p.cutline{
 	    font-family: "open-sans", arial, helvetica, sans-serif;
 	    font-size: .9em;
-	    line-height: 1.6em;
-	    margin:1% 0 3% 0;
-	    color: #666;
+	    line-height: 1.3em;
+	    margin:0;
 	    display:block;
 	}
-	.chapter #story .photo-package p.credit,
-	.photo-package.sidebar p.credit{
+	.chapter p.credit{
 		font-family: "open-sans", arial, helvetica, sans-serif;
 	    font-size: .7em;
-	    margin-top:3px;
+	    margin:3px 0 2px 0;
 	    text-align:right;
-	}
-	.chapter .photo-package.group img:first-of-type{
-	    margin:0;
-	}
-	.chapter .photo-package.group.top{
-	    margin-bottom:0;
-	}
-	.chapter .photo-package.group.bottom{
-	    margin-top:0;
-	    padding-top:0;
-	}
-	.chapter .photo-package:after{
-	    display: block;
-	    height: 3px;
-	    margin-top: 25px;
-	    width: 100px;
-	    background-color: #ccc;
-	    left: 0;
-	    top: 0;
-	    content:"";
-	}
-	.chapter .photo-package.group.top:after{
-	    display: none;
 	}
 
 	/* footer credits */
@@ -350,7 +346,7 @@
 	  color: #c52026;
 	  font-size: 94px;
 	  line-height: 75px;
-	  padding-top: 4px;
+	  padding-top: 0px;
 	  padding-right: 8px;
 	  font-family: Georgia;
 	}
