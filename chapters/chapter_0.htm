@@ -1,0 +1,41 @@
+<!-- ******************************* -->
+<!-- Mobile Cover Heads and Photo    -->
+<!-- ******************************* -->
+
+<section id="mobile_cover">
+    <img src="img/chp_0/mortarboards.jpg" class="img-responsive" alt=""/>
+    <div class="hsContent">
+        <div class="cover headlines">
+            <h2 class="label"><?php echo $story_info[0]['label']; ?></h2>
+            <h1 class="title shadow"><?php echo $story_info[0]['main_head']; ?></h1>
+            <p class="intro shadow"><?php echo $story_info[0]['sub_head']; ?></p>
+            <p class="credits shadow">Story By <?php echo "<a href='mailto:" . $story_info[0]['author_1_email'] . "'>" . $story_info[0]['author_1'] . "</a>"; ?></p>
+            <img src="img/icons/mortarboard-white.svg">
+        </div>
+    </div>
+</section>
+
+<!-- ******************************* -->
+<!-- Desktop Cover Heads and Photo   -->
+<!-- ******************************* -->
+
+<section id="cover" class="coverSlide bcg"
+     data-center="background-position: 50% 0px;" 
+     data-top-bottom="background-position: 50% -100px;" 
+     data-anchor-target="#cover"
+>
+	<div class="hsContainer">
+		<div class="hsContent">
+    		<div class="headlines"
+                data-start="opacity:1;"
+                data-250-start="opacity:0;" 
+            >
+    			<h2 class="label"><?php echo $story_info[0]['label']; ?></h2>
+    			<h1 class="title shadow"><?php echo $story_info[0]['main_head']; ?></h1>
+    			<p class="intro shadow"><?php echo $story_info[0]['sub_head']; ?></p>
+                <p class="credits shadow">Story By <?php echo "<a href='mailto:" . $story_info[0]['author_1_email'] . "'>" . $story_info[0]['author_1'] . "</a>"; ?></p>
+                <img src="img/icons/mortarboard-white.svg">
+    		</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,507 @@
+/*  ==========================================================================
+    Global Styles (things we use no matter what size)
+    ========================================================================== */
+	@viewport {
+		width:device-width;
+		min-zoom: .5;
+    	max-zoom: 10;
+	}
+
+	body {
+	    font-family:Georgia, Times, serif;
+	    font-size: 1em;
+	    line-height: 1.4;
+	    height: 100%;
+	    background-color: #fff;
+	    overflow:auto;
+	    color:#666;
+	}
+	.chromeframe {
+	    margin: 0.2em 0;
+	    background: #ccc;
+	    color: #000;
+	    padding: 0.2em 0;
+	}
+	img {
+	    vertical-align: middle;
+	}
+	.shadow{
+		text-shadow: 0px 2px 5px rgba(0, 0, 0, .8);
+	}
+	/* loading page */
+	#loading-page{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		z-index:99999;
+		background-color:#000000;
+	}
+	#loading-page #credits .hsContent .headlines img#interlock-logo{
+	    width:50px;
+	    display:block;
+	}
+	#loading-page #credits .hsContent .headlines p.loading-head{
+		font-size:2em;
+		line-height:1.25em;
+		font-weight:100;
+		color:#ffffff;
+		margin:.5em 0;
+	}
+	#loading-page #credits .hsContent .headlines p.loading-note{
+		font-family:"Open sans", Arial, Helvetica, sans-serif;
+		font-size:.6em;
+		text-transform: uppercase;
+		color:#fff;
+		font-weight:400;
+		letter-spacing: 5px;
+	}
+	#loading-page #loading-image{
+		width:25px;
+		height:25px;
+		display:block!important;
+		margin-top:0;
+	}
+
+	/* user alert styles */
+
+	#user-alert{
+	    display:block;
+	    position: absolute;
+	    top: 50px;
+	    width: 100%;
+	    z-index: 100;
+	    background-color: #c52026;
+	    opacity:.75;
+	}
+	#user-alert p{
+	    font:0.8em "Open sans", Arial, Helvetica, sans-serif;
+	    font-weight:400;
+	    text-align:left;
+	    color: #fff;
+	    margin:0;
+	    padding:3px 3px;
+	}
+	#user-alert p a{
+	    text-decoration: underline;
+	    color:#fff;
+	    margin-right:3px;
+	}
+	#user-alert p a:hover{
+	    text-decoration: none;
+	    color:#ccc;
+	}
+	#user-alert #remove-alert{
+	    cursor:pointer;
+	}
+
+    /* cover page styles */
+	.bcg{
+		display:none;
+	}	
+	.hsContainer {
+	    /*display: table;
+	    table-layout: fixed;*/
+	    width: 100%;
+	    height: 100%;
+	    overflow: hidden;
+	    position: relative;
+	}
+	.hsContent {
+	    width: 100%;
+	    margin: auto;
+	    display: block;
+	    vertical-align: middle;
+	    padding: 17% 8%;
+	    text-align: center;
+	    color:#fff;
+	}
+	.hsContent .headlines p.credits{
+	    font-family:"Open sans", Arial, Helvetica, sans-serif;
+	    font-size:.8em;
+	    font-weight:400;
+	    margin-top:1%;
+	}
+	.hsContent .headlines p.credits a{
+	    text-decoration:none;
+	    text-transform:uppercase;
+	    color:#ffffff;
+	    font-weight:400;
+	}
+	.hsContent .headlines p.credits a:hover{
+	    color:#cccccc;
+	}
+	.hsContent .headlines img{
+	    width:48px;
+	    margin:5% auto 0 auto;
+	    display:none;
+	}
+
+	/* body styles */
+	
+	.chapter #story p {
+	    font-size: 1.15em;
+	    line-height: 1.45em;
+	}
+	.chapter #story p.top-graph{
+	    margin-top:0;
+	}
+	.chapter #story p strong,
+	.chapter #story p strong a,
+	.chapter #story p b,
+	.chapter #story p b a{
+	    color:#c52026;
+	    text-transform:uppercase;
+	}
+	.chapter #story p a{
+		color:#666;
+	}
+	.chapter #story p a:hover{
+		text-decoration: none;
+	}
+
+	/* image and cutline styles */
+
+	.chapter .photo-package{
+	    margin:5% 0;
+	    padding:3% 0;
+	}
+	.chapter .photo-package img{
+	    border:1px solid #dddddd;
+	    border-radius:5px;
+	}
+	.chapter .photo-package.sidebar img{
+	    border:none;
+	    border-radius:0;
+	    margin:15px 0 3px 0;
+	}   
+	.chapter .photo-package h3{
+		font-size:1.25em;
+		font-weight: 700;
+	    margin-bottom:0;
+	    margin-top:0;
+	}
+	.chapter .photo-package h3:before{
+	    display: block;
+	    height: 10px;
+	    margin-bottom: 15px;
+	    width: 100px;
+	    background-color: #c52026;
+	    left: 0;
+	    top: 0;
+	    content:"";
+	}  
+	.chapter .photo-package.group.bottom h3:before{
+	    display: none;
+	} 
+	.chapter .photo-package .single-cutline{
+	    font-family: "open-sans", arial, helvetica, sans-serif;
+	    font-size: .9em;
+	    line-height: 1.6em;
+	    margin:1% 0 3% 0;
+	    color: #666;
+	    display:block;
+	}
+	.chapter #story .photo-package p.credit,
+	.photo-package.sidebar p.credit{
+		font-family: "open-sans", arial, helvetica, sans-serif;
+	    font-size: .7em;
+	    margin-top:3px;
+	    text-align:right;
+	}
+	.chapter .photo-package.group img:first-of-type{
+	    margin:0;
+	}
+	.chapter .photo-package.group.top{
+	    margin-bottom:0;
+	}
+	.chapter .photo-package.group.bottom{
+	    margin-top:0;
+	    padding-top:0;
+	}
+	.chapter .photo-package:after{
+	    display: block;
+	    height: 3px;
+	    margin-top: 25px;
+	    width: 100px;
+	    background-color: #ccc;
+	    left: 0;
+	    top: 0;
+	    content:"";
+	}
+	.chapter .photo-package.group.top:after{
+	    display: none;
+	}
+
+	/* footer credits */
+
+	#mobile_credits{
+		display:block;
+	}
+	#credits .hsContent{
+	    position:relative;
+	}
+	#credits .hsContent .headlines img#interlock-logo{
+	    width:100px;
+	    display:block;
+	}
+	#credits .hsContent .headlines p{
+	    color:#1e1e1e;
+	}
+	#credits .hsContent .headlines p a{
+	    color:#1e1e1e;
+	}
+	#credits .hsContent .headlines p a:hover{
+	    color:#cccccc;
+	}
+	#credits .hsContent .headlines p.label{
+	    font-family:"Open sans", Arial, Helvetica, sans-serif;
+	    font-size:.8em;
+	    letter-spacing: 5px;
+	    font-weight:700;
+	    text-transform:uppercase;
+	    display:block;
+	    color:#c52026;
+	    margin:0 0 5% 0;
+	    padding:0;
+	}
+	#credits .hsContent .headlines p.headline{
+	    font-size: 1.25em;
+	    margin-top:5%;
+	}
+	#credits .hsContent .headlines p.credits{
+	    font-family:"Open sans", Arial, Helvetica, sans-serif;
+	    font-size:.8em;
+	    font-weight:400;
+	    margin-top:5px;
+	}
+	#credits p.copyright{
+	    margin-top:10%;
+	    margin-bottom:10%;
+	    font-family:"Open sans", Arial, Helvetica, sans-serif;
+	    font-size:.8em;
+	    color: #ffffff;
+	}
+	#credits p.copyright a{
+	    text-decoration:none;
+	    color:#ffffff;
+	}
+	#credits p.copyright a:hover{
+	    color:#cccccc;
+	}
+	#credits_intro,#credits_lead{
+		display:none;
+	}
+
+
+/*  ==========================================================================
+    Mobile Styles
+    ========================================================================== */
+
+	/* cover page styles */
+
+	#mobile_cover{
+		display:block;
+		/*margin-top:40px;*/
+	}
+	.hsContent {
+		position:absolute;
+		top:0;
+	}
+	.hsContent .headlines h2.label{
+		font-size: 0.8em;
+	    line-height: 0.8em;
+	    text-transform: uppercase;
+	    letter-spacing: 3px;
+	    font-weight: 700;
+	    color:#c52026;
+	}
+	.hsContent .headlines h1.title{
+	    font-size:2.15em;
+	    color:#fff;
+	    margin:.25em 0;
+	}
+	.hsContent .headlines p.intro{
+	    color: #fff;
+	    font-size:1.15em;
+	    margin:3% 0 5% 0;
+	}
+
+	/* intro paragraph styles */
+
+	/*.chapter #story p.first{
+	    font-size: 1.5em;
+	    line-height: 1.25em;
+	    margin-top:40px;
+	}
+	.chapter #story p.first::before {
+	    display: block;
+	    height: 15px;
+	    margin-bottom: 30px;
+	    width: 140px;
+	    background-color: #c52026;
+	    left: 0;
+	    top: 0;
+	    content:"";
+	}*/
+	.chapter p.first:first-letter {
+	  float: left;
+	  color: #c52026;
+	  font-size: 94px;
+	  line-height: 75px;
+	  padding-top: 4px;
+	  padding-right: 8px;
+	  font-family: Georgia;
+	}
+
+	/* hide desktop cover */
+
+	#cover{
+		display:none;
+	}
+
+
+/*  ==========================================================================
+    Tablet Styles
+    ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+	
+	/* cover page styles */
+	#user-alert{
+		display:none;
+	}
+
+	.hsContainer {
+	    display: table;
+	    table-layout: fixed;
+	}
+
+	.hsContent {
+		padding:20% 8%;
+	}
+	.hsContent .headlines h2.label{
+        background-color:#c52026;
+        font-weight: 400;
+        padding:10px 10px;
+        color:#fff;
+    }
+	.hsContent .headlines h1.title{
+	    font-size:3em;
+	    margin-top:4%;
+	}
+	.hsContent .headlines p.intro{
+	    font-size:1.3em;
+	    margin-bottom: 3%;
+	}
+	.hsContent .headlines img{
+		display:block;
+	}
+
+	/* intro paragraph styles */
+
+	/*.chapter #story p.first{
+	    font-size: 1.75em;
+	    line-height: 1.5em;
+	}*/
+
+}
+
+
+/*  ==========================================================================
+    Desktop Normal Styles
+    ========================================================================== */
+
+@media only screen and (min-width: 1025px) {	
+	
+	/* cover image styles */
+
+	#mobile_cover{
+		display:none;
+	}
+	#cover{
+		display:block;
+	}
+	.bcg{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        height: 100%;
+        width: 100%;
+        /*-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);*/
+        display:block;  
+    }
+    #cover.coverSlide.bcg{
+        position:relative;
+        background-image:url('../img/chp_0/mortarboards.jpg');
+    }
+    #cover.bcg{
+    	
+    }
+
+    /* cover headline styles */
+	.hsContent{
+		padding:20% 20%;
+	}
+    .hsContent .headlines h1.title{
+        font-size:4.25em;
+        margin:.6em 0 .3em 0;
+    }
+    .hsContent .headlines p.intro{
+        font-size:1.5em;
+        margin:0 0 2% 0;
+    }
+
+	/* intro paragraph styles */
+
+	/*.chapter #story p.first{
+	    font-size: 3.25em;
+	    line-height: 1.0em;
+	}*/
+
+	/* footer credit styles */
+
+	#credits_intro,#credits_lead{
+		display:block;
+	}
+	#mobile_credits{
+		display:none;
+	}
+	#credits_lead.bcg{
+		background-color:#000000;
+	}
+    #credits_intro .bcg{
+    	background-image:url('../img/chp_2/diploma-lg.jpg');
+    }
+    #credits .hsContent{
+    	background-color:#000;
+    }
+	#credits .hsContent .headlines p{
+	    color:#fff;
+	}
+	#credits .hsContent .headlines p a{
+	    color:#fff;
+	}
+	#credits p.copyright{
+	    color: #ffffff;
+	}
+	#credits p.copyright a{
+	    color:#ffffff;
+	}
+
+}
+
+
+
+/*  ==========================================================================
+    Desktop Large Styles
+    ========================================================================== */
+
+

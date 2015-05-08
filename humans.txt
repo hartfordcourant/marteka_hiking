@@ -1,0 +1,24 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <josh kovner> -- <author> -- <@jkovner_courant>
+    <cloe poisson> -- <photographer, videographer> -- <@cloepoisson>
+    <john ferraro> -- <story editor> -- <@courantstatedsk>
+    <rich messina> -- <photo editor, video editor> -- <@messinacourant>
+    <marc oconnell> -- <copy editor> -- <moconnell@courant.com>
+    <matt moser> -- <copy editor> -- <mmoser@courant.com>
+    <timothy reck> -- <desiger, developer> -- <@handlebar_bibyl>
+
+# THANKS
+
+    <Carol Marcantonio>
+    <Evan>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
+    skrollr, brightcove, responsiveslides, viewportsize
+
