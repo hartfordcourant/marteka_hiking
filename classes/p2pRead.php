@@ -9,7 +9,7 @@
 function getContentItem($item){
 
 	//p2p api key 
-	$P2Paccesstoken = '874ai9840kqvuyojkyqp4k49o6q56yyfa35';
+	$P2Paccesstoken = 'xxx';
 
 	// p2p url
 	$P2Purl = "http://content-api.p2p.tribuneinteractive.com/content_items/" . $item . ".json";
