@@ -1,0 +1,4 @@
+error_log
+.htaccess
+config/config.php
+*.zip
